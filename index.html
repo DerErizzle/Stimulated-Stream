@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stimulating Stream Overlay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="overlay-container">
+        <div class="aspect-ratio-container">
+            <div class="content-container">
+                <div id="overlayBlocker" style="display:none;" class="overlay-blocker"></div>
+                <button id="startButton" style="display:none;" class="start-button">Start</button>
+                <p class="obs-text">
+                  <span id="copyMessage" style="display: none;" class="copy-message">Link copied!</span>
+                   Add <a href="#" id="obsLink">https://obs.erizzle.de</a> as a browser source to OBS</p>
+            </div>
+            <div class="video-container subway-surfers">
+                <video id="subwaySurfersVideo" autoplay loop>
+                    <source src="/assets/videos/subway-surfers.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="video-container fitness">
+                <video id="fitnessVideo" autoplay loop>
+                    <source src="/assets/videos/fitness.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="video-container slime">
+                <video id="slimeVideo" autoplay loop>
+                    <source src="/assets/videos/slime.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="video-container mukbang">
+                <video id="mukbangVideo" autoplay loop>
+                    <source src="/assets/videos/mukbang.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="video-container streamer">
+                <video id="streamerVideo" autoplay loop>
+                    <source src="/assets/videos/streamer.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="video-container hydraulic">
+                 <video id="hydraulicVideo" autoplay loop muted>
+                     <source src="/assets/videos/hydraulic.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="lofi-girl-container">
+                 <img src="assets/videos/lofi-girl-small.gif" class="lofi-girl">
+            </div>
+
+            <div class="audio-player-container">
+                <audio id="audioPlayer" controls loop></audio>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
